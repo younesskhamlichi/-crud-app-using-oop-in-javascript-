@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crud Application OOP</title>
+</head>
+<body>
+    <div class="container ">
+        <div class="text-center">
+             <p class="paragraf">merci de biens remplir les formations. vous recevrez une email de confirmations</p>
+        </div>
+        <div class="main row justify-content-center">
+            <form id="produit-form" >
+                <div >
+                    <label for="nom">nom</label>
+                    <input type="text" id="nom" class="form-control" placeholder="Entrer le nom" >
+                    
+                </div>
+                <div >
+                    <label for="marque">Marque</label>
+                    <input type="text" id="marque" placeholder="Entrer la marque"  >
+                   
+                </div>
+                <div >
+                    <label for="prix">Prix</label>
+                    <input type="number" id="prix"  placeholder="Entrer le prix"  >
+                    
+                </div>
+                <div >
+                    <label for="date">Date de Production</label>
+                    <input type="date" id="date" placeholder="Entrer la Date de Production" >
+                 
+                </div>
+                <div >
+                    <label>Type de produits</label>
+                    <select id="sel">
+                        <!-- <option selected>Type</option> -->
+                        <option value="">Type de produit</option>
+                        <option >hygiène et toilette</option>
+                        <option >soins esthétiques</option>
+                        <option >produits solaires</option>
+                        <option >beauté des mains et des pieds</option>
+                        <option >produits de maquillage</option>
+                        <option >entretien capillaires</option>
+                        <option >parfums</option>
+                    </select>
+                 
+                </div>
+                <div class="col-10 mb-3">
+                    <label class="label">Promotion : </label>
+                    <input type="radio" value="oui" id="oui"  name="promo" >
+                    <small>oui</small>
+                    <input type="radio" value="non" id="non" name="promo" >
+                    <small>non</small>
+                </div>
+                <div class="col-10">
+                    <input type="submit" value="submit" id="submit">
+                    <input type="hidden" id="editBtn">
+                </div>
+            </form>
+            <div >
+                <table  id="table">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Marque</th>
+                            <th>Prix</th>
+                            <th>Date de Production</th>
+                            <th>Type de produits</th>
+                            <th>Promotion</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="produit-list">
+                     
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
