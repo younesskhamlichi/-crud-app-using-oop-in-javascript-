@@ -29,7 +29,7 @@ class Article{
     storeProduct(){
         const allData = JSON.parse(localStorage.getItem("product")) ?? [] ;
         allData.push({id:this.id,nom:this.nom,marque:this.marque,prix:this.prix,date:this.date,sel:this.sel,promo:this.promo});
-        allData.sort((a,b) => a.nom.localCompare(b.nom));
+        // allData.sort((a,b) => a.nom.localCompare(b.nom));
         localStorage.setItem("product",JSON.stringify(allData))
     }
 
@@ -100,7 +100,7 @@ form.addEventListener("submit", (e)=>{
     sel.value = '';
     promo.value = '';
 
-    window.location.reload();
+    // window.location.reload();
 })
 
 // delete data
