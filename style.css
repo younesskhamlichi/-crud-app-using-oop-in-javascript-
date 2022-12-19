@@ -38,11 +38,19 @@ body {
     margin-bottom: 25px;
    }
 
-   /* @media screen and (max-width: 500px){
+   @media screen and (max-width: 500px){
     #nom ,#marque,#prix,#date,#sel ,#table{
     width: 300px;  
-        }
+     }
 
+     #promo{
+    display: none;
+    }
+    table, th, td {
+        border: 2px solid white;
+        padding: -4px;
+        margin-left: 8px;
+    }
 
     
-} */
+}
